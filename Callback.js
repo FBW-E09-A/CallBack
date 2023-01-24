@@ -1,9 +1,17 @@
-function greetMessage(greetingPassed){
-    console.log('Good Mornng, John');
-    greetingPassed();
+//Task 1(callback)
+function greetMessage(greet){
+    console.log(`Good Mornng, ${greet}`);
+    
 }
-function greetMessage2(){
-    console.log("GoodMorning, Peter, GM, Mark");
+ greetMessage("John");
+
+function greetMessage2(array,callback){
+    array.forEach(name => {callback(name)
+        });
 }
- greetMessage(greetMessage2);
+ greetMessage2(["john", "peter", "mark"],greetMessage);
  
+
+//Task 1(array) 
+
+
